@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "699255219155",
+    "project_id": "faduapp",
+    "storage_bucket": "faduapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699255219155:android:d0ec83598d36fb96c70526",
+        "android_client_info": {
+          "package_name": "gd.rf.wwitdev.fadu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699255219155-gut252b9nom3kp3r631ia6nmrgt5cqki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl8v_Hmh7SJjphU6kdTSOZy3p_yL-EtrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699255219155-gut252b9nom3kp3r631ia6nmrgt5cqki.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "699255219155-g01brbg5s9mr57oqv63pq82jqj4od1f4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "gd.rf.wwitdev.fadu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
