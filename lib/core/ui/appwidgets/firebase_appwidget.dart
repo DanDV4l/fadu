@@ -12,12 +12,17 @@ class FirebaseAppWidget extends StatelessWidget {
     return FutureBuilder(
       future: Firebase.initializeApp(
           options: DefaultFirebaseOptions.currentPlatform),
-      builder: ((context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
+      builder: ((context, initializeSnapshot) {
+        if (initializeSnapshot.connectionState == ConnectionState.waiting) {
           return const SplashPage();
         }
-        if (snapshot.connectionState == ConnectionState.done) {
-          return const HomePage();
+        if (initializeSnapshot.connectionState == ConnectionState.done) {
+          return StreamBuilder(builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.active) {
+              //OBS: HAVE TO SEND SNAPSHOT TO THE BLOC PROVIDER
+            }
+            return const HomePage();
+          });
         }
         return Container(
           color: Colors.black,
