@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AppInfos {
-  String title = 'Fadu App';
-  String about = 'Created by Daniel - WW:IT dev';
+class AppInfoData {
+  final String title = 'Fadu App';
+  String about = 'Created by Daniel Souza Pinto - WW:ITdev';
   Map<String, Widget Function(BuildContext)> routes = {
     '/splash': (context) => const SplashPage(),
     '/login': (context) => const LoginPage(),
