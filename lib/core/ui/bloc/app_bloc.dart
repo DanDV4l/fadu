@@ -13,7 +13,7 @@ class AppBloc extends Cubit {
   Stream<QuerySnapshot> get output => _controller.stream;
 
   void initState() {
-    _controller.addStream(_repository.fetch(userName: 'user1ID'));
+    _controller.addStream(_repository.fetch(userName: _user));
   }
 
   void dispose() {
