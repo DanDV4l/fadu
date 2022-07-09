@@ -1,14 +1,12 @@
 import 'dart:async';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fadu/core/data/repositories/firebase_repository.dart';
+import 'package:fadu/core/data/repositories/firebase/firebase_messages_repository.dart';
 import 'package:fadu/domain/repositories/messages_repository.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-class AppBloc extends Cubit {
+class AppBloc {
   final String _user;
   final StreamController<QuerySnapshot> _controller = StreamController();
-  final MessagesRepository _repository = FirebaseRepository();
+  final MessagesRepository _repository = FirebaseMessagesRepository();
 
   Stream<QuerySnapshot> get output => _controller.stream;
 
@@ -20,5 +18,5 @@ class AppBloc extends Cubit {
     _controller.close();
   }
 
-  AppBloc(this._user) : super(null);
+  AppBloc(this._user);
 }

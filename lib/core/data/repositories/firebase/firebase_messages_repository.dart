@@ -4,7 +4,7 @@ import 'package:fadu/domain/entities/message_entity.dart';
 import 'package:fadu/domain/repositories/messages_repository.dart';
 import 'package:fadu/domain/usecases/messages_usecase.dart';
 
-class FirebaseRepository implements MessagesRepository {
+class FirebaseMessagesRepository implements MessagesRepository {
   MessagesUsecase messages = FirebaseMessagesUsecase();
   @override
   Stream<QuerySnapshot> fetch({required userName}) async* {

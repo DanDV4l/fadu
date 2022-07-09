@@ -1,5 +1,4 @@
 import 'package:fadu/core/ui/appwidgets/firebase/app_widget.dart';
-import 'package:fadu/core/ui/appwidgets/firebase/firebase_initialization.dart';
 import 'package:fadu/core/ui/shared/app_info_data.dart';
 import 'package:flutter/material.dart';
 
