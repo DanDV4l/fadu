@@ -1,5 +1,5 @@
 abstract class UserUsecase {
-  getdata();
+  getdata({required userID});
   signup();
   login();
   update();

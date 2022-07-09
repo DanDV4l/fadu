@@ -1,5 +1,5 @@
 abstract class UserRepository {
-  getdata();
+  getdata({required userID});
   signup();
   login();
   update();
