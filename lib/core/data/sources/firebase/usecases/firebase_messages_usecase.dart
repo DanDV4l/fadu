@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fadu/core/data/sources/firebase/controller/firebase_send_message_controller.dart';
+import 'package:fadu/core/data/sources/firebase/controllers/firebase_send_message_controller.dart';
 import 'package:fadu/domain/entities/message_entity.dart';
 import 'package:fadu/domain/usecases/messages_usecase.dart';
 

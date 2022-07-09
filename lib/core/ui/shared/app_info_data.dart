@@ -1,3 +1,7 @@
+import 'package:fadu/core/ui/modules/home/home_page.dart';
+import 'package:fadu/core/ui/modules/login/login_page.dart';
+import 'package:fadu/core/ui/modules/signup/signup_page.dart';
+import 'package:fadu/core/ui/modules/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 
 class AppInfoData {
@@ -9,46 +13,4 @@ class AppInfoData {
     '/signup': (context) => const SignUpPage(),
     '/home': (context) => const HomePage()
   };
-}
-
-//Will be removed below
-class SplashPage extends StatelessWidget {
-  const SplashPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-      ),
-    );
-  }
-}
-
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(), body: const Text('TESTE TESTE TESTE'));
-  }
-}
-
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Text('');
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Text('');
-  }
 }
