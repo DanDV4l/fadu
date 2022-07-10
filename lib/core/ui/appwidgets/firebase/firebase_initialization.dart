@@ -1,4 +1,5 @@
 import 'package:fadu/core/data/sources/firebase/firebase_options.dart';
+import 'package:fadu/core/ui/modules/splash/splash_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -9,17 +10,17 @@ class FirebaseInitialization extends StatelessWidget {
   Widget? widget;
   @override
   Widget build(BuildContext context) {
+    FirebaseOptions firebaseOptions = DefaultFirebaseOptions.android;
     return FutureBuilder(
-        future: Firebase.initializeApp(
-            options: DefaultFirebaseOptions.currentPlatform),
+        future: Firebase.initializeApp(options: firebaseOptions),
         builder: (context, initSnapshot) {
           if (initSnapshot.connectionState == ConnectionState.waiting) {
             return Container(
-              color: Colors.black,
+              color: Colors.red,
             );
           }
           if (initSnapshot.connectionState == ConnectionState.done) {
-            return widget!;
+            return const SplashPage();
           }
 
           return const SizedBox();

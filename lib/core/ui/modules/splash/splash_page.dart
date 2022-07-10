@@ -1,3 +1,4 @@
+import 'package:fadu/core/data/sources/firebase/controllers/google_auth_controller.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
@@ -5,6 +6,11 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        GoogleAuthController googleAuthController = GoogleAuthController();
+        googleAuthController.signIn();
+      }),
+    );
   }
 }
