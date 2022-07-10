@@ -3,8 +3,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class FirebaseInit extends StatelessWidget {
-  FirebaseInit({Key? key, required Widget this.widget}) : super(key: key);
+class FirebaseInitialization extends StatelessWidget {
+  FirebaseInitialization({Key? key, required Widget this.widget})
+      : super(key: key);
   Widget? widget;
   @override
   Widget build(BuildContext context) {

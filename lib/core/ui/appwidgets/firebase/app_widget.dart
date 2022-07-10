@@ -7,6 +7,6 @@ class FirebaseAppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FirebaseInit(widget: const SplashPage());
+    return FirebaseInitialization(widget: const SplashPage());
   }
 }
