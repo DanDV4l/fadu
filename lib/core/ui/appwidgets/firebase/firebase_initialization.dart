@@ -10,9 +10,8 @@ class FirebaseInitialization extends StatelessWidget {
   Widget? widget;
   @override
   Widget build(BuildContext context) {
-    FirebaseOptions firebaseOptions = DefaultFirebaseOptions.android;
     return FutureBuilder(
-        future: Firebase.initializeApp(options: firebaseOptions),
+        future: Firebase.initializeApp(options: DefaultFirebaseOptions.android),
         builder: (context, initSnapshot) {
           if (initSnapshot.connectionState == ConnectionState.waiting) {
             return Container(

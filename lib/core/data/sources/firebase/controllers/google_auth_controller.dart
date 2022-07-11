@@ -1,15 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class GoogleAuthController {
-  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: <String>['email']);
-
+  String? name;
   Future<void> signIn() async {
-    try {
-      final response = await GoogleSignIn().signIn();
-
-      print(response.toString());
-    } catch (e) {
-      print(e.toString());
-    }
+    final _googleUser = await GoogleSignIn().signIn();
   }
 }

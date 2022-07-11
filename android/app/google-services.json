@@ -7,12 +7,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:699255219155:android:d0ec83598d36fb96c70526",
+        "mobilesdk_app_id": "1:699255219155:android:11dea4a105e947c8c70526",
         "android_client_info": {
           "package_name": "gd.rf.wwitdev.fadu"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "699255219155-7r910f5g3n9ss4k5umtj0blhgp5pm3id.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gd.rf.wwitdev.fadu",
+            "certificate_hash": "5691c9860b713a957a57d9f8723fa013c62bf5d8"
+          }
+        },
         {
           "client_id": "699255219155-gut252b9nom3kp3r631ia6nmrgt5cqki.apps.googleusercontent.com",
           "client_type": 3
